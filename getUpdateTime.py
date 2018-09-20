@@ -2,10 +2,11 @@ import urllib3
 import time
 from datetime import datetime
 from bs4 import BeautifulSoup
+import member_const
 
 # start = time.time()
 
-url = "http://www.keyakizaka46.com/s/k46o/diary/detail/17235?ima=0000&cd=member"
+url = "http://www.keyakizaka46.com/s/k46o/diary/member?ima=0000"
 
 # for urllib3
 http = urllib3.PoolManager()
@@ -43,6 +44,7 @@ for update in updates:
 
 
 #kobayashi
-print(member_update_time[7])
+print(member_update_time[member_const.name_to_id["kobayashi"]])
+
 #hirate
-print(member_update_time[17])
+print(member_update_time[member_const.name_to_id["hirate"]])

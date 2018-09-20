@@ -27,10 +27,11 @@ for title in titles_html:
 for blog in blogs_html:
     blogs.append(blog.text)
 
-for i in range(20):
-    #f = open("./hirate/"+str(i) + '.txt','w')
-    f = open("./kobayashi/"+str(i) + '.txt','w')
-    f.write(blogs[i])
-    f.close()
+
+# for i in range(20):
+#     #f = open("./hirate/"+str(i) + '.txt','w')
+#     f = open("./kobayashi/"+str(i) + '.txt','w')
+#     f.write(blogs[i])
+#     f.close()
 
 #print(blogs[3])
