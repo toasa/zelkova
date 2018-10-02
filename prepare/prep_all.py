@@ -13,7 +13,7 @@ name = sys.argv[1]
 names = member_const.names
 
 if name not in names:
-    print("input correct members name")
+    print("[USAGE] python3 prep_all.py NAME_OF_MEMBER")
 else:
     path_csv = "../blogs/" + name + "/blogs.csv"
     path_corpus = "../datasets/params_corpus/" + name + ".pkl"
